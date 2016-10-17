@@ -13,6 +13,9 @@ import io.vov.vitamio.Vitamio;
 import io.vov.vitamio.widget.MediaController;
 import io.vov.vitamio.widget.VideoView;
 
+/**
+ * https://github.com/Yiiip/VitamioDemo
+ */
 public class MainActivity extends AppCompatActivity {
 
     protected final static String VIDEO_URL = "http://media.neusoft.edu.cn/video/2016DNUI.mp4";
