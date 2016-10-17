@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.lyp.vitamiodemo.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#FFF"
+        app:title="@string/app_name">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/videoParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <io.vov.vitamio.widget.VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+        <ImageView
+            android:id="@+id/imgPlay"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:src="@mipmap/ic_play_64"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="使用默认的MediaController"
+            android:textColor="#252525"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="自定义播放器"
+            android:textSize="16sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</LinearLayout>
